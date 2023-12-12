@@ -1,0 +1,312 @@
+{
+    "english": {
+        "main_page": {
+            "menu": {
+                "title": "Test answer extractor",
+                "menu1": "Start",
+                "menu2": "Setting",
+                "menu3": "Exit"
+            }
+        },
+        "raffle_page": {
+            "title": "[Raffle Page]",
+            "sub_title": "Raffle Num",
+            "num": "Num",
+            "answer": "Answer",
+            "good_luck": "Good luck!",
+            "user_cancel_msg": "The lottery has been cancelled."
+        },
+        "setting_page": {
+            "title": "[Setting Page]",
+            "manual": "w, s: UP, DOWN || a, d: Left, Right || ESC: Exit",
+            "menu1": "numberOfQuestions",
+            "menu2": "questionNumber",
+            "menu3": "language",
+            "menu4": "skipMode",
+            "menu5": "ultraSkipMode"
+        },
+        "exit_page": {
+            "title": "[Exit Page]",
+            "end_msg": "Good bye!"
+        }
+    },
+    "korean": {
+        "main_page": {
+            "menu": {
+                "title": "시험 정답 추출기",
+                "menu1": "시작",
+                "menu2": "설정",
+                "menu3": "종료"
+            }
+        },
+        "raffle_page": {
+            "title": "[추출 페이지]",
+            "sub_title": "번호 추출",
+            "num": "번호",
+            "answer": "정답",
+            "good_luck": "행운을 빕니다!",
+            "user_cancel_msg": "추출이 취소되었습니다."
+        },
+        "setting_page": {
+            "title": "[설정 페이지]",
+            "manual": "w, s: 위, 아래 || a, d: 감소, 증가 || ESC: 뒤로가기",
+            "menu1": "문항 수    ",
+            "menu2": "객관식 수",
+            "menu3": "언어",
+            "menu4": "스킵 모드",
+            "menu5": "울트라 스킵 모드"
+        },
+        "exit_page": {
+            "title": "[종료 창]",
+            "end_msg": "안녕히가세요!"
+        }
+    },
+    "japanese": {
+        "main_page": {
+            "menu": {
+                "title": "テスト正解抽出器",
+                "menu1": "スタート",
+                "menu2": "設定",
+                "menu3": "終了"
+            }
+        },
+        "raffle_page": {
+            "title": "[抽選ページ]",
+            "sub_title": "抽選番号",
+            "num": "番号",
+            "answer": "答え",
+            "good_luck": "がんばって！",
+            "user_cancel_msg": "抽選はキャンセルされました。"
+        },
+        "setting_page": {
+            "title": "[設定ページ]",
+            "manual": "w、s：上下 || a、d：左右 || ESC：終了",
+            "menu1": "質問数",
+            "menu2": "問題番号",
+            "menu3": "言語",
+            "menu4": "スキップモード",
+            "menu5": "ウルトラスキップモード"
+        },
+        "exit_page": {
+            "title": "[終了ページ]",
+            "end_msg": "さようなら！"
+        }
+    },
+    "chinese": {
+        "main_page": {
+            "menu": {
+                "title": "考试答案提取器",
+                "menu1": "开始",
+                "menu2": "设置",
+                "menu3": "退出"
+            }
+        },
+        "raffle_page": {
+            "title": "[抽奖页面]",
+            "sub_title": "抽奖号码",
+            "num": "号码",
+            "answer": "答案",
+            "good_luck": "祝你好运！",
+            "user_cancel_msg": "抽奖已取消。"
+        },
+        "setting_page": {
+            "title": "[设置页面]",
+            "manual": "w, s：上, 下 || a, d：左, 右 || ESC：退出",
+            "menu1": "题目数量",
+            "menu2": "问题数量",
+            "menu3": "语言",
+            "menu4": "跳过模式",
+            "menu5": "超级跳过模式"
+        },
+        "exit_page": {
+            "title": "[退出页面]",
+            "end_msg": "再见！"
+        }
+    },
+    "french": {
+        "main_page": {
+            "menu": {
+                "title": "Extracteur de réponses d'examen",
+                "menu1": "Commencer",
+                "menu2": "Paramètres",
+                "menu3": "Quitter"
+            }
+        },
+        "raffle_page": {
+            "title": "[Page de tirage au sort]",
+            "sub_title": "Numéro du tirage",
+            "num": "Numéro",
+            "answer": "Réponse",
+            "good_luck": "Bonne chance !",
+            "user_cancel_msg": "Le tirage a été annulé."
+        },
+        "setting_page": {
+            "title": "[Page des paramètres]",
+            "manual": "w, s : Haut, Bas || a, d : Gauche, Droite || ESC : Quitter",
+            "menu1": "Nombre de questions",
+            "menu2": "Nombre de réponses",
+            "menu3": "Langue",
+            "menu4": "Mode de saut",
+            "menu5": "Mode de saut ultra"
+        },
+        "exit_page": {
+            "title": "[Page de sortie]",
+            "end_msg": "Au revoir !"
+        }
+    },
+    "german": {
+        "main_page": {
+            "menu": {
+                "title": "Prüfungsantwort-Extraktor",
+                "menu1": "Starten",
+                "menu2": "Einstellungen",
+                "menu3": "Beenden"
+            }
+        },
+        "raffle_page": {
+            "title": "[Auslosungsseite]",
+            "sub_title": "Losnummer",
+            "num": "Nummer",
+            "answer": "Antwort",
+            "good_luck": "Viel Glück!",
+            "user_cancel_msg": "Die Auslosung wurde abgebrochen."
+        },
+        "setting_page": {
+            "title": "[Einstellungsseite]",
+            "manual": "w, s: Hoch, Runter || a, d: Links, Rechts || ESC: Beenden",
+            "menu1": "Anzahl der Fragen",
+            "menu2": "Fragennummer",
+            "menu3": "Sprache",
+            "menu4": "Überspringen-Modus",
+            "menu5": "Ultra-Überspringen-Modus"
+        },
+        "exit_page": {
+            "title": "[Beendigungsseite]",
+            "end_msg": "Auf Wiedersehen!"
+        }
+    },
+    "dutch": {
+        "main_page": {
+            "menu": {
+                "title": "Toetsantwoordextractor",
+                "menu1": "Start",
+                "menu2": "Instellingen",
+                "menu3": "Afsluiten"
+            }
+        },
+        "raffle_page": {
+            "title": "[Loterijpagina]",
+            "sub_title": "Loterijnummer",
+            "num": "Nummer",
+            "answer": "Antwoord",
+            "good_luck": "Veel succes!",
+            "user_cancel_msg": "De loterij is geannuleerd."
+        },
+        "setting_page": {
+            "title": "[Instellingenpagina]",
+            "manual": "w, s: Omhoog, Omlaag || a, d: Links, Rechts || ESC: Afsluiten",
+            "menu1": "Aantal vragen",
+            "menu2": "Vraagnummer",
+            "menu3": "Taal",
+            "menu4": "Overslaanmodus",
+            "menu5": "Ultra-overslaanmodus"
+        },
+        "exit_page": {
+            "title": "[Afsluitpagina]",
+            "end_msg": "Tot ziens!"
+        }
+    },
+    "russian": {
+        "main_page": {
+            "menu": {
+                "title": "Извлекатель ответов на тесте",
+                "menu1": "Начать",
+                "menu2": "Настройки",
+                "menu3": "Выход"
+            }
+        },
+        "raffle_page": {
+            "title": "[Страница розыгрыша]",
+            "sub_title": "Номер розыгрыша",
+            "num": "Номер",
+            "answer": "Ответ",
+            "good_luck": "Удачи!",
+            "user_cancel_msg": "Розыгрыш отменен."
+        },
+        "setting_page": {
+            "title": "[Страница настроек]",
+            "manual": "w, s: Вверх, Вниз || a, d: Влево, Вправо || ESC: Выход",
+            "menu1": "Количество вопросов",
+            "menu2": "Номер вопроса",
+            "menu3": "Язык",
+            "menu4": "Режим пропуска",
+            "menu5": "Ультра-режим пропуска"
+        },
+        "exit_page": {
+            "title": "[Страница выхода]",
+            "end_msg": "До свидания!"
+        }
+    },
+    "arabic": {
+        "main_page": {
+            "menu": {
+                "title": "مستخرج إجابات الاختبار",
+                "menu1": "ابدأ",
+                "menu2": "الإعدادات",
+                "menu3": "الخروج"
+            }
+        },
+        "raffle_page": {
+            "title": "[صفحة السحب]",
+            "sub_title": "رقم السحب",
+            "num": "الرقم",
+            "answer": "الجواب",
+            "good_luck": "حظاً موفقاً!",
+            "user_cancel_msg": "تم إلغاء السحب."
+        },
+        "setting_page": {
+            "title": "[صفحة الإعدادات]",
+            "manual": "w, s: لأعلى، لأسفل || a, d: لليسار، لليمين || ESC: الخروج",
+            "menu1": "عدد الأسئلة",
+            "menu2": "رقم السؤال",
+            "menu3": "اللغة",
+            "menu4": "وضع التخطي",
+            "menu5": "وضع التخطي الفائق"
+        },
+        "exit_page": {
+            "title": "[صفحة الخروج]",
+            "end_msg": "وداعاً!"
+        }
+    },
+    "malayalam": {
+        "main_page": {
+            "menu": {
+                "title": "പരീക്ഷാ ഉത്തര എക്സ്ട്രാക്ടർ",
+                "menu1": "ആരംഭിക്കുക",
+                "menu2": "ക്രമീകരണങ്ങൾ",
+                "menu3": "പുറത്തേക്ക്"
+            }
+        },
+        "raffle_page": {
+            "title": "[റാഫ്ഫിൽ പേജ്]",
+            "sub_title": "റാഫ്ഫിൽ നമ്പർ",
+            "num": "നമ്പർ",
+            "answer": "ഉത്തരം",
+            "good_luck": "നല്ല ലക്ഷ്യം!",
+            "user_cancel_msg": "റാഫ്ഫിൽ റദ്ദാക്കിച്ചു."
+        },
+        "setting_page": {
+            "title": "[ക്രമീകരണ പേജ്]",
+            "manual": "w, s: മുകളിലേക്ക്, താഴേക്ക് || a, d: ഇടത്, വലത് || ESC: പുറത്തേക്ക്",
+            "menu1": "ചോദ്യങ്ങളുടെ എണ്ണം",
+            "menu2": "ചോദ്യം നമ്പർ",
+            "menu3": "ഭാഷ",
+            "menu4": "ഓളം മോഡ്",
+            "menu5": "അൾട്ര ഓളം മോഡ്"
+        },
+        "exit_page": {
+            "title": "[പുറത്തേക്കുക പേജ്]",
+            "end_msg": "വിടുക!"
+        }
+    }
+}
