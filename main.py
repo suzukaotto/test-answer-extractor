@@ -57,6 +57,119 @@ def detect_key():
         if event.event_type == keyboard.KEY_DOWN:
             return event.name
 
+        
+def raffle_page():
+    global languageData
+    try:
+        global numberOfQuestions, questionNumber
+        cls()
+        result_data = {}
+        
+        def random_num():
+            return random.randint(1, questionNumber)
+            
+        def print_dict_data(dictionary):
+            df = pandas.DataFrame(list(dictionary.items()), columns=[languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["num"], languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["answer"]])
+            print(df.to_string(justify="left", index=False))    
+
+        def count_values(dictionary):
+            series = pandas.Series(dictionary)
+            value_counts = series.value_counts()
+            sorted_counts = value_counts.sort_index()
+        
+            print(sorted_counts)
+        
+        for i in range(1, numberOfQuestions+1):
+            raffle_num = random_num()
+            result_data[i] = raffle_num
+            
+            if skipMode == False:
+                cls()
+                h = None
+                j = 1
+                for l in range(1, 9+1):
+                    while True:
+                        h = j
+                        j = random_num()
+                        if h == j and not (h == 1 and j == 1):
+                            continue
+                        else:
+                            break
+                    
+                    print(f"{languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["title"]}")
+                    print(f"{i}. {languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["sub_title"]} ({numberOfQuestions}/{i})")
+                    for g in range(1, questionNumber+1):
+                        if g == j:
+                            print(f"[{g}] ", end="")
+                        else:
+                            print(f" {g}  ", end="")
+                        
+                    time.sleep(0.1)
+                    cls()
+            
+            if skipMode == False:
+                for l in range(1, 5+1):
+                    cls()
+                    print(f"{languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["title"]}")
+                    print(f"{i}. {languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["sub_title"]} ({numberOfQuestions}/{i})")
+                    for g in range(1, questionNumber+1):
+                        if g == raffle_num:
+                            if l % 2 == 0:
+                                print(f" {g}  ", end="")
+                            if l % 2 == 1:
+                                print(f"[{g}] ", end="")
+                                
+                        else:
+                            print(f" {g}  ", end="")
+                            
+                    time.sleep(0.2)
+                time.sleep(0.5)
+                
+            else:
+                if ultraSkipMode == False:
+                    for l in range(1, 3+1):
+                        cls()
+                        print(f"{languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["title"]}")
+                        print(f"{i}. {languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["sub_title"]} ({numberOfQuestions}/{i})")
+                        for g in range(1, questionNumber+1):
+                            if g == raffle_num:
+                                    print(f"[{g}] ", end="")
+                            else:
+                                print(f" {g}  ", end="")
+                    time.sleep(0.1)
+        
+        cls()
+        print(f"{languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["title"]}")
+        
+        print("<Result Data>")
+        print_dict_data(result_data)
+        print()
+        
+        print("<Sum Data>")
+        count_values(result_data)
+        print()
+        
+        print(f"{languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["good_luck"]}")
+        
+        os.system("pause")
+        
+    except KeyboardInterrupt:
+        cls()
+        print(f"{languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["title"]}")
+        
+        print("<Result Data>")
+        print_dict_data(result_data)
+        print()
+        
+        print("<Sum Data>")
+        count_values(result_data)
+        print()
+        
+        print(f"{languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["good_luck"]}")
+        
+        print(f"{languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["user_cancel_msg"]}")
+        os.system("pause")
+
 def set_page():
     global languageData
     global cursorPosY, numberOfQuestions, questionNumber, skipMode, ultraSkipMode
@@ -120,6 +233,7 @@ def set_page():
                 cursorPosY_maxVal = 3
             
             
+            
     cls()
     print_page()
     
@@ -172,9 +286,9 @@ def set_page():
         languageMode = languageMode_maxVal
     
     if cursorPosY < cursorPosY_minVal:
-        cursorPosY = cursorPosY_minVal
-    if cursorPosY > cursorPosY_maxVal:
         cursorPosY = cursorPosY_maxVal
+    if cursorPosY > cursorPosY_maxVal:
+        cursorPosY = cursorPosY_minVal
     
     if numberOfQuestions < numberOfQuestions_minVal:
         numberOfQuestions = numberOfQuestions_minVal
@@ -188,95 +302,6 @@ def set_page():
     
     cls()
     print_page()
-        
-def raffle_page():
-    global languageData
-    try:
-        global numberOfQuestions, questionNumber
-        cls()
-        result_data = {}
-        
-        def random_num():
-            return random.randint(1, questionNumber)
-            
-        def print_dict_data(dictionary):
-            df = pandas.DataFrame(list(dictionary.items()), columns=[languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["num"], languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["answer"]])
-            print(df.to_string(justify="left"))    
-
-        for i in range(1, numberOfQuestions+1):
-            raffle_num = random_num()
-            result_data[i] = raffle_num
-            
-            if skipMode == False:
-                cls()
-                h = None
-                j = 1
-                for l in range(1, 9+1):
-                    while True:
-                        h = j
-                        j = random_num()
-                        if h == j:
-                            continue
-                        else:
-                            break
-                    
-                    print(f"{languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["title"]}")
-                    print(f"{i}. {languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["sub_title"]} ({numberOfQuestions}/{i})")
-                    for g in range(1, questionNumber+1):
-                        if g == j:
-                            print(f"[{g}] ", end="")
-                        else:
-                            print(f" {g}  ", end="")
-                        
-                    time.sleep(0.1)
-                    cls()
-            
-            if skipMode == False:
-                for l in range(1, 5+1):
-                    cls()
-                    print(f"{languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["title"]}")
-                    print(f"{i}. {languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["sub_title"]} ({numberOfQuestions}/{i})")
-                    for g in range(1, questionNumber+1):
-                        if g == raffle_num:
-                            if l % 2 == 0:
-                                print(f" {g}  ", end="")
-                            if l % 2 == 1:
-                                print(f"[{g}] ", end="")
-                                
-                        else:
-                            print(f" {g}  ", end="")
-                            
-                    time.sleep(0.2)
-                time.sleep(0.5)
-                
-            else:
-                if ultraSkipMode == False:
-                    for l in range(1, 3+1):
-                        cls()
-                        print(f"{languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["title"]}")
-                        print(f"{i}. {languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["sub_title"]} ({numberOfQuestions}/{i})")
-                        for g in range(1, questionNumber+1):
-                            if g == raffle_num:
-                                    print(f"[{g}] ", end="")
-                            else:
-                                print(f" {g}  ", end="")
-                    time.sleep(0.1)
-        
-        cls()
-        print(f"{languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["title"]}")
-        print_dict_data(result_data)
-        print(f"{languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["good_luck"]}")
-        
-        os.system("pause")
-        
-    except KeyboardInterrupt:
-        cls()
-        print(f"{languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["title"]}")
-        print_dict_data(result_data)
-        print(f"{languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["good_luck"]}")
-        
-        print(f"{languageData[languageList[languageModeList[languageMode]]]["raffle_page"]["user_cancel_msg"]}")
-        os.system("pause")
 
 def exit_page():
     global languageData
